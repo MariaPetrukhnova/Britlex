@@ -291,6 +291,10 @@ body {
     color: var(--descr-text);
 }
 
+.contact .container {
+    align-items: stretch;
+}
+
 .contact-content {
     max-width: 767px;
 }
