@@ -60,12 +60,16 @@ body {
 .flex-block {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 
 .page-header {
     padding: 55px 0;
     background-color: var(--main-bcg);
+}
+
+.page-header .flex-block {
+    align-items: center;
 }
 
 .logo {
@@ -87,10 +91,11 @@ body {
 }
 
 .header-btn {
+    min-width: 312px;
     color: var(--title-color);
     text-align: center;
     letter-spacing: 0.03em;
-    padding: 20px 106px;
+    padding: 20px 56px;
     border: 2px solid var(--subtitle-color);
     border-radius: 10px;
     background-color: var(--main-bcg);
@@ -130,7 +135,8 @@ body {
 }
 
 .hero-btn {
-    padding: 23px 106px;
+    min-width: 426px;
+    padding: 23px 64px;
     background: var(--subtitle-color);
     border-radius: 10px;
     color: var(--white-elements);
@@ -235,9 +241,6 @@ body {
 .about-reference {
     text-align: center;
 }
-.pricing .flex-block {
-    align-items: stretch;
-}
 
 .pricing .section-title {
     text-align: center;
@@ -291,9 +294,6 @@ body {
     color: var(--descr-text);
 }
 
-.contact .container {
-    align-items: stretch;
-}
 
 .contact-content {
     max-width: 767px;
@@ -313,7 +313,7 @@ body {
 }
 
 .contact-btn {
-    width: 312px;
+    min-width: 312px;
     padding: 20px 56px;
     color: var(--white-elements);
     text-align: center;
